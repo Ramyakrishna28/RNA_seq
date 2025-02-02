@@ -12,14 +12,14 @@ Bulk_RNA Analysis workflow
 
 6.Convert SAM file to BAM
 
-7. Sorted BAM file & Indexing the BAM file
+7.Sorted BAM file & Indexing the BAM file
 
 8.Transcript Quantification
 
 8.1. Conversion of Transcripts into genes
 
- Differential expression analysis 
+Differential expression analysis 
 
 8.2.Direct Differential expression analysis of transcripts using Ballgown package
 
-9.  Pathway analysis of differential expressed genes
+9.Pathway analysis of differential expressed genes
