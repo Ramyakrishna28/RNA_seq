@@ -45,14 +45,14 @@ sample_info <- data.frame(
 )
 
 
-Create DESeq2 Dataset and Pre-filter Low Counts
+#Create DESeq2 Dataset and Pre-filter Low Counts
 dds <- DESeqDataSetFromTximport(txi, colData = sample_info, design = ~ condition)
 
 # Pre-filter genes with very low counts (to remove noise)
 dds <- dds[rowSums(counts(dds)) > 10, ]   # can adjust threshold
 
 
-Run DESeq2 Differential Expression Analysis
+#Run DESeq2 Differential Expression Analysis
 dds <- DESeq(dds)
 
 # Obtain results (Control vs Disease)
@@ -91,7 +91,7 @@ annotated_res <- merge(as.data.frame(resSig), gene_annots,
 write.csv(annotated_res, "DESeq2_results_significant_annotated.csv", row.names = FALSE)
 
 
-Visualization 
+#Visualization 
 # MA Plot
 plotMA(res, main = "DESeq2 - MA Plot", ylim = c(-5, 5))
 
