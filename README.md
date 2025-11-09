@@ -4,7 +4,8 @@ This repository provides a complete end-to-end workflow for Bulk RNA-Seq data an
 📁 Repository Structure
 
 Bulk-RNAseq-Analysis/
-│
+
+
 ├── Bulk_RNA Analysis.py    
 ├── DEseq2.R                 
 └── README.md               
